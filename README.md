@@ -44,6 +44,8 @@
           --> *var jshint = require('gulp-jshint');*
           --> *var lib = require('bower-files')();*
           --> *var browserSync = require('browser-sync').create();*
+          --> *var sass = require('gulp-sass');*
+          --> *var sourcemaps = require('gulp-sourcemaps');*
 
     6)  Run {npm} commands:
         6.1)  npm init **(will generate package.JSON)**
@@ -61,8 +63,9 @@
         6.12) npm install bower -g **(globally install bower)**
         6.13) npm install bower-files --save-dev **()**
         6.14) npm install browser-sync --save-dev **(implement our development server with live reloading)**
+        6.15) npm install gulp-sass gulp-sourcemaps --save-dev **(will let your run sass)**
 
-        All in One Command (After npm init, install gulp, browserify): 
+        All in One Command (After npm init, install gulp, browserify):
         *npm install vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint --save-dev*
 
     7) Run *gulp myTask (jsBrowserify)*
