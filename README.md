@@ -1,3 +1,7 @@
+**before starting you need to go to this site to add CORS chrome extension:
+https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en**
+
+
 **what we want to do:
 
  -Create site that queries bike index API
