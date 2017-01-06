@@ -8,10 +8,11 @@ var displayManufacturer = function(serial, manufacturerData, image) {
 
 var displayBikes = function(location, manufacturer, bikeArray) {
   var i = '';
-  // console.log(bikeArray);
+  console.log(bikeArray);
+  $('.showBikes').empty();
   for(i=0; i< bikeArray.length; ++i) {
     $('.showBikes').append('<img src="' + bikeArray[i].large_img + '">');
-    // console.log(bikeArray[i]);
+    console.log(bikeArray[i]);
   }
 };
 

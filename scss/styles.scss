@@ -53,4 +53,24 @@ $gray : #d3d3d3;
      box-shadow: 0px 0px 35px black;
    }
   }
+  .showBikes {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      flex-basis: 50%;
+      height: 400px;
+      object-fit: 100%;
+      &:hover:not([src="null"]) { // Tells the browser: "When hovering and item that doesnt have "src="null" does this...""
+        transform: scale(1.05) rotateZ(2deg);
+      }
+      &[src="null"] {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
 }
